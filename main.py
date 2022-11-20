@@ -83,6 +83,7 @@ class Punch:
                 res = requests.post(url, json=data, headers=headers, timeout=30)
                 if res.status_code == 200:
                     return "打卡成功"
+                    self.wechatNotice("打卡成功")
                 elif retryCnt == 3:
                     print("提交表单失败")
                     self.wechatNotice("打卡失败")
