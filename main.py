@@ -97,7 +97,7 @@ class Punch:
     # 打卡失败微信提示
     def wechatNotice(self, message):
         if self.SCKey != '':
-            url = 'https://sctapi.ftqq.com/{0}.send'.format(self.SCKey)
+            url = 'https://sctapi.ftqq.com/SCT183709TWHXi5F3nUEmYnWdlEtR3aHlQ.send'.format(self.SCKey)
             data = {
                 'title': message,
             }
